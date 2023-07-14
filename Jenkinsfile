@@ -12,9 +12,9 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh 'PORT=3001 npm start &'
-        sh 'PORT=3002 npm start &'
-        sh 'PORT=3003 npm start &'
+        sh 'JENKINS_NODE_COOKIE=dontKillMe PORT=3001 npm start &'
+        sh 'JENKINS_NODE_COOKIE=dontKillMe PORT=3002 npm start &'
+        sh 'JENKINS_NODE_COOKIE=dontKillMe PORT=3003 npm start &'
       }
     }
   }
