@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+var port = process.env.PORT;
 function App() {
-  port = process.env.PORT;
+  console.log(port);
   return (
     <div className="App">
       <header className="App-header">
@@ -10,14 +11,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React App is running on {port}
-        </a>
+        <p>
+          React App is running on {process.env.PORT}
+        </p>
       </header>
     </div>
   );
