@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 
-var port = process.env;
 function App() {
   console.log(port);
   return (
@@ -12,7 +11,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          React App is running on 
+          React App is running.
         </p>
       </header>
     </div>
